@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 0 240px;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -10,13 +11,14 @@
 }
 
 .slide > h1 {
-  word-wrap: break-word;
   margin: 0;
   font-size: 96px;
+  font-weight: 500;
+  word-wrap: break-word;
 }
 
 .slide > h2 {
-  margin: 0;
+  margin: 40px 0 0;
   font-size: 48px;
   font-weight: 400;
 }

@@ -2,33 +2,43 @@ import React, { Component } from "react";
 import Praise from "react-praise";
 
 import Slide from "./Slide";
-import Contiamo from "./Contiamo";
-import "./App.css";
+import slides from "./slides";
+import makePhrases from "./phrases";
 
 class App extends Component {
   state = {
-    activeSlide: 0
+    activeSlide: 0,
+    slides
   };
+
+  // I have event listeners in case this doesn't work live hahaha
   componentDidMount() {
     document.addEventListener("keyup", this.respondToKeyPress);
+    document.addEventListener("click", this.nextOnClick);
   }
   componentWillUnmount() {
     document.removeEventListener("keyup", this.respondToKeyPress);
+    document.removeEventListener("click", this.nextOnClick);
   }
-  respondToKeyPress(e) {
-    switch (e.keyCode) {
+  nextOnClick = () => {
+    this.goToNextSlide();
+  };
+  respondToKeyPress = ({ keyCode }) => {
+    switch (keyCode) {
       case 37:
-        this.previousSlide();
+        this.goToPreviousSlide();
         break;
       case 39:
-        this.nextSlide();
+        this.goToNextSlide();
         break;
+      default:
+        return;
     }
-  }
+  };
   changeSlide(activeSlide) {
     this.setState(() => ({ activeSlide }));
   }
-  nextSlide() {
+  goToNextSlide() {
     this.setState(prevState => ({
       activeSlide:
         prevState.activeSlide === this.state.slides.length - 1
@@ -36,7 +46,7 @@ class App extends Component {
           : prevState.activeSlide + 1
     }));
   }
-  previousSlide() {
+  goToPreviousSlide() {
     this.setState(prevState => ({
       activeSlide:
         prevState.activeSlide === 0
@@ -45,33 +55,14 @@ class App extends Component {
     }));
   }
   render() {
+    const { slides, activeSlide } = this.state;
+    const { title, subtitle } = slides[activeSlide];
     return (
-      <Praise confidence={0.7}>
-        {a => (
-          <div style={{ maxWidth: 1366, margin: "0 auto" }}>
-            <Slide title="👋🏾" />
-            <Slide
-              title="Tejas"
-              subtitle={<em>like &ldquo;Contagious&rdquo;</em>}
-            />
-            <Slide title={<Contiamo />} subtitle="Front-End Lead" />
-            <Slide
-              title={<React.Fragment>You Can't &rarr; You Can</React.Fragment>}
-              subtitle="The Welcoming Nature of JavaScript"
-            />
-            <Slide
-              title={
-                <em>
-                  &ldquo;JavaScript developers should all just jump off a bridge
-                  and die&rdquo;
-                </em>
-              }
-              subtitle={
-                <div style={{ textAlign: "right" }}>&mdash; Scala Engineer</div>
-              }
-            />
-          </div>
-        )}
+      <Praise
+        phrases={makePhrases(slide => this.changeSlide(slide))}
+        confidence={0.8}
+      >
+        {() => <Slide title={title} subtitle={subtitle} />}
       </Praise>
     );
   }

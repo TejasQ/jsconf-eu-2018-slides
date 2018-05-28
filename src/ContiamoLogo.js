@@ -1,5 +1,6 @@
 import React from "react";
 
+/** Literally just the logo */
 export default () => (
   <svg
     style={{ width: 400 }}
@@ -15,8 +16,8 @@ export default () => (
         y1="49.991%"
         y2="49.991%"
       >
-        <stop offset="0%" stop-color="#22205F" />
-        <stop offset="100%" stop-color="#344DA1" />
+        <stop offset="0%" stopColor="#22205F" />
+        <stop offset="100%" stopColor="#344DA1" />
       </linearGradient>
       <linearGradient
         id="__27uIzAu__contiamo-b"
@@ -25,8 +26,8 @@ export default () => (
         y1="49.997%"
         y2="49.997%"
       >
-        <stop offset="0%" stop-color="#344DA1" />
-        <stop offset="100%" stop-color="#22205F" />
+        <stop offset="0%" stopColor="#344DA1" />
+        <stop offset="100%" stopColor="#22205F" />
       </linearGradient>
       <linearGradient
         id="__27uIzAu__contiamo-c"
@@ -35,8 +36,8 @@ export default () => (
         y1="50.014%"
         y2="50.014%"
       >
-        <stop offset="0%" stop-color="#344DA1" />
-        <stop offset="100%" stop-color="#49BB85" />
+        <stop offset="0%" stopColor="#344DA1" />
+        <stop offset="100%" stopColor="#49BB85" />
       </linearGradient>
       <linearGradient
         id="__27uIzAu__contiamo-d"
@@ -45,8 +46,8 @@ export default () => (
         y1="50%"
         y2="50%"
       >
-        <stop offset="0%" stop-color="#49BB85" />
-        <stop offset="100%" stop-color="#344DA1" />
+        <stop offset="0%" stopColor="#49BB85" />
+        <stop offset="100%" stopColor="#344DA1" />
       </linearGradient>
       <linearGradient
         id="__27uIzAu__contiamo-e"
@@ -55,8 +56,8 @@ export default () => (
         y1="49.997%"
         y2="49.997%"
       >
-        <stop offset="0%" stop-color="#FBF49C" />
-        <stop offset="100%" stop-color="#49BB85" />
+        <stop offset="0%" stopColor="#FBF49C" />
+        <stop offset="100%" stopColor="#49BB85" />
       </linearGradient>
       <linearGradient
         id="__27uIzAu__contiamo-f"
@@ -64,8 +65,8 @@ export default () => (
         y1="50.119%"
         y2="50.119%"
       >
-        <stop offset="0%" stop-color="#49BB85" />
-        <stop offset="100%" stop-color="#FBF49C" />
+        <stop offset="0%" stopColor="#49BB85" />
+        <stop offset="100%" stopColor="#FBF49C" />
       </linearGradient>
     </defs>
     <g fill="none">

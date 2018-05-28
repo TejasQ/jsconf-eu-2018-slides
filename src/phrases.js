@@ -1,0 +1,22 @@
+export default goToSlide => ({
+  hello: () => goToSlide(0),
+  "my name": () => goToSlide(1),
+  "data science": () => goToSlide(2),
+  datascience: () => goToSlide(2),
+  "the title": () => goToSlide(3),
+  quote: () => goToSlide(4),
+  history: () => goToSlide(5),
+  "number one": () => goToSlide(6),
+  "number 1": () => goToSlide(6),
+  "number two": () => goToSlide(7),
+  "number 2": () => goToSlide(7),
+  "number to": () => goToSlide(7),
+  "number three": () => goToSlide(8),
+  "number 3": () => goToSlide(8),
+  "in fact opinionated": () => goToSlide(9),
+  "functional language": () => goToSlide(10),
+  lastly: () => goToSlide(11),
+  "last key": () => goToSlide(11),
+  journey: () => goToSlide(12),
+  praise: () => goToSlide(13)
+});

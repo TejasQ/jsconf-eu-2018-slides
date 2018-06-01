@@ -80,5 +80,13 @@ export default [
     title: "My Journey with JS",
     subtitle: <React.Fragment>You Can't &rarr; You Can</React.Fragment>
   },
-  { title: "Praise 🙌🏿", subtitle: "Voice-activated Conference Slides" }
+  {
+    title: "Praise 🙌🏿",
+    subtitle: (
+      <div style={{ textAlign: "center" }}>
+        <p>Voice-invoked Functions</p>
+        <p>github.com / TejasQ / praise</p>
+      </div>
+    )
+  }
 ];

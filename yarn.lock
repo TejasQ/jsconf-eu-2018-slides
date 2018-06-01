@@ -5316,6 +5316,10 @@ postcss@^6.0.0, postcss@^6.0.1, postcss@^6.0.13:
     source-map "^0.6.1"
     supports-color "^5.4.0"
 
+praise@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/praise/-/praise-1.0.1.tgz#00116d00cd4000a689354a9d223f6101a7943235"
+
 prelude-ls@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.1.2.tgz#21932a549f5e52ffd9a827f570e04be62a97da54"
@@ -5534,6 +5538,13 @@ react-dom@^16.4.0:
 react-error-overlay@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-4.0.0.tgz#d198408a85b4070937a98667f500c832f86bd5d4"
+
+react-praise@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/react-praise/-/react-praise-1.0.0.tgz#28b8193ce0592a96954ad106979b447763d91b81"
+  dependencies:
+    praise "^1.0.1"
+    react "^16.4.0"
 
 react-scripts@1.1.4:
   version "1.1.4"

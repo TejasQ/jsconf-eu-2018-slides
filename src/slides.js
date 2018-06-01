@@ -1,5 +1,6 @@
 import React from "react";
 import Contiamo from "./ContiamoLogo";
+import PraiseQRCode from "./PraiseQRCode";
 
 export default [
   {
@@ -86,6 +87,9 @@ export default [
       <div style={{ textAlign: "center" }}>
         <p>Voice-invoked Functions</p>
         <p>github.com / TejasQ / praise</p>
+        <p>
+          <PraiseQRCode />
+        </p>
       </div>
     )
   }

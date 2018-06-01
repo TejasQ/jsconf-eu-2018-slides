@@ -22,3 +22,11 @@
   font-size: 48px;
   font-weight: 400;
 }
+
+.slide > .meta {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  font-size: 36px;
+  font-weight: bold;
+}

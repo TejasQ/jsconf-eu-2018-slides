@@ -25,7 +25,7 @@
 
 .slide > .meta {
   position: fixed;
-  bottom: 40px;
+  top: 40px;
   right: 40px;
   font-size: 36px;
   font-weight: bold;

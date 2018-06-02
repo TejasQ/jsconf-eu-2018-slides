@@ -3,6 +3,7 @@ export default goToSlide => ({
   "my name": () => goToSlide(1),
   "data science": () => goToSlide(2),
   datascience: () => goToSlide(2),
+  "open source": () => goToSlide(14),
   "the title": () => goToSlide(3),
   quote: () => goToSlide(4),
   history: () => goToSlide(5),

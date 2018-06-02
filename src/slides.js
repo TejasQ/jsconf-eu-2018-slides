@@ -26,12 +26,7 @@ export default [
     subtitle: "The Welcoming Nature of JavaScript"
   },
   {
-    title: (
-      <em>
-        &ldquo;JavaScript developers should just jump off a bridge and
-        die.&rdquo;
-      </em>
-    ),
+    title: <em>&ldquo;JavaScript developers should just not.&rdquo;</em>,
     subtitle: <React.Fragment>&mdash; Scala Engineer, 2017</React.Fragment>
   },
   {
@@ -90,6 +85,19 @@ export default [
         <p>
           <PraiseQRCode />
         </p>
+      </div>
+    )
+  },
+  {
+    title: "Open Source",
+    subtitle: (
+      <div>
+        github.com / TejasQ
+        <ul>
+          <li> / basically-graphql</li>
+          <li> / basically-streams</li>
+          <li> / basically-web-workers</li>
+        </ul>
       </div>
     )
   }

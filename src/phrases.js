@@ -20,7 +20,6 @@ export default goToSlide => ({
   "last key": () => goToSlide(11),
   journey: () => goToSlide(12),
   rene: () => goToSlide(12),
-  please: () => goToSlide(12),
   praise: () => goToSlide(13),
   ospreys: () => goToSlide(13)
 });
